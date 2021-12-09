@@ -1,0 +1,56 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #031f4b;
+    overflow-x: hidden;
+}
+
+
+.container{
+    position:block;
+    display: block;
+    overflow: hidden;
+}
+
+nav{
+    text-align: right;
+    margin-top: 0%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 20px;
+    position: relative;
+    z-index:1;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#b3cde0;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color:#6497b1;
+    text-decoration: underline;
+}
+
+.sqr{
+    color:#b3cde0;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.button{
+    color: #031f4b;
+    background-color: white;
+}
+
+h2{
+    display: block;
+    font-size: 2em;
+}

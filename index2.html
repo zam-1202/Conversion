@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="squareRoot.css">
+    <title>Square Root</title>
+</head>
+<body>
+
+    <div class = "container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li> <a href = "index.html">Home </a></li>
+                    <li> <a href = "index2.html">Square Root </a></li>
+                    <li> <a href = "index3.html">Temperature Converter </a></li>
+                    <li> <a href = "index4.html">Area of a Triangle </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class = sqr>
+    <h2>SQUARE ROOT OF A NUMBER</h2>
+    Input a number: <input id = "number"> 
+    <button class = "button" onclick="squareRoot()">ENTER</button>
+    <input type = "text" id = "answer">
+    </div>
+
+    <script type = "text/javascript">
+        function squareRoot(){
+            var num = document.getElementById("number").value;
+            var result = Math.sqrt(num);
+            document.getElementById("answer").value=result;
+        }
+    </script>
+</body>
+</html>
