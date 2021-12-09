@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temperature.css">
+    <title>Temperature</title>
+</head>
+<body>
+
+    <div class = "container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                  <li> <a href = "index1.html">Home </a></li>
+                  <li> <a href = "index2.html">Square Root </a></li>
+                  <li> <a href = "index3.html">Temperature Converter </a></li>
+                  <li> <a href = "index4.html">Area of a Triangle </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class = convert>
+    <h2>CONVERSION OF °C TO °F<br></h2>
+    <h3>Put a temperature vice versa</h3><br><br>
+    <p><input id = "convert_celsius" onkeyup="convert('celsius')"> °C </p>
+    <p><input id = "convert_fahrenheit" onkeyup="convert('fahrenheit')"> °F </p>
+    <p id="text_res" ></p>
+    </div>
+
+    <script>
+        function convert(degree) {
+            var x;
+            if (degree == "celsius") {
+              x = document.getElementById("convert_celsius").value * 9 / 5 + 32;
+              document.getElementById("convert_fahrenheit").value = Math.round(x);
+              document.getElementById("text_res").innerHTML = convert_celsius.value + " degrees Celsius is " + convert_fahrenheit.value + " degrees Fahrenheit.";
+
+            } else {
+              x = (document.getElementById("convert_fahrenheit").value -32) * 5 / 9;
+              document.getElementById("convert_celsius").value = Math.round(x);
+              document.getElementById("text_res").innerHTML = convert_fahrenheit.value + " degrees Fahrenheit is " + convert_celsius.value + " degrees Celsius.";
+            }
+          }
+    </script>
+</body>
+</html>

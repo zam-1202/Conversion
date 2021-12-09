@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="areaTriangle.css">
+    <title>Area of a Triangle</title>
+</head>
+<body>
+
+    <div class = "container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li> <a href = "index1.html">Home </a></li>
+                    <li> <a href = "index2.html">Square Root </a></li>
+                    <li> <a href = "index3.html">Temperature Converter </a></li>
+                    <li> <a href = "index4.html">Area of a Triangle </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="tri">
+    <h2>AREA OF A TRIANGLE</h2>
+    <p><i> b <i> </i><input type = "number" id = "base" onkeyup="Calculate()"> <br><br></p>
+    <p><i> hb <i> </i><input type = "number" id = "height" onkeyup="Calculate()"> <br><br></p>
+    <p id = "ansans"></p>
+    </div>
+
+    <script>
+            function Calculate(){
+                var base = document.getElementById("base").value;
+                var height = document.getElementById("height").value;
+                var result = ((base*height)/2);
+                document.getElementById("ansans").innerHTML = "The area of the Triangle is " + result;
+        }
+    </script>
+</body>
+</html>
